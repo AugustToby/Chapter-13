@@ -1,4 +1,7 @@
-const { defineConfig } = require('@vue/cli-service')
-module.exports = defineConfig({
-  transpileDependencies: true
-})
+module.exports = {
+  devServer: {
+    // the address for my newly created api route
+    //requests will be sent to the proxy link
+    proxy: 'http://127.0.0.1:3000'
+  }
+}
